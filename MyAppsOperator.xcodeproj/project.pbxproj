@@ -16,6 +16,7 @@
 		7F393B7229ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B7129ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift */; };
 		7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */; };
 		7F393B8229ED330600CACADA /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8129ED330600CACADA /* Requester.swift */; };
+		7F393B8429ED349600CACADA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8329ED349600CACADA /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		7F393B7129ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppsOperatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIConfiguration.swift; sourceTree = "<group>"; };
 		7F393B8129ED330600CACADA /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		7F393B8329ED349600CACADA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */,
 				7F393B8129ED330600CACADA /* Requester.swift */,
+				7F393B8329ED349600CACADA /* Endpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
 				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
+				7F393B8429ED349600CACADA /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
