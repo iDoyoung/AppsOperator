@@ -15,6 +15,7 @@
 		7F393B7029ED2F2D00CACADA /* MyAppsOperatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B6F29ED2F2D00CACADA /* MyAppsOperatorUITests.swift */; };
 		7F393B7229ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B7129ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift */; };
 		7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */; };
+		7F393B8229ED330600CACADA /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8129ED330600CACADA /* Requester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		7F393B6F29ED2F2D00CACADA /* MyAppsOperatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppsOperatorUITests.swift; sourceTree = "<group>"; };
 		7F393B7129ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppsOperatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIConfiguration.swift; sourceTree = "<group>"; };
+		7F393B8129ED330600CACADA /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */,
+				7F393B8129ED330600CACADA /* Requester.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				7F393B5729ED2F2D00CACADA /* ContentView.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
+				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
 				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
