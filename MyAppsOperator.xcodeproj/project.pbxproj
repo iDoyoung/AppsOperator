@@ -14,6 +14,7 @@
 		7F393B6629ED2F2D00CACADA /* MyAppsOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B6529ED2F2D00CACADA /* MyAppsOperatorTests.swift */; };
 		7F393B7029ED2F2D00CACADA /* MyAppsOperatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B6F29ED2F2D00CACADA /* MyAppsOperatorUITests.swift */; };
 		7F393B7229ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B7129ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift */; };
+		7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7F393B6B29ED2F2D00CACADA /* MyAppsOperatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppsOperatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F393B6F29ED2F2D00CACADA /* MyAppsOperatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppsOperatorUITests.swift; sourceTree = "<group>"; };
 		7F393B7129ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppsOperatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		7F393B5329ED2F2C00CACADA /* MyAppsOperator */ = {
 			isa = PBXGroup;
 			children = (
+				7F393B7E29ED2F3200CACADA /* Network */,
 				7F393B5429ED2F2C00CACADA /* MyAppsOperatorApp.swift */,
 				7F393B5629ED2F2D00CACADA /* ContentView.swift */,
 				7F393B5829ED2F2D00CACADA /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				7F393B7129ED2F2D00CACADA /* MyAppsOperatorUITestsLaunchTests.swift */,
 			);
 			path = MyAppsOperatorUITests;
+			sourceTree = "<group>";
+		};
+		7F393B7E29ED2F3200CACADA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				7F393B5729ED2F2D00CACADA /* ContentView.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
+				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
