@@ -108,9 +108,9 @@
 		7F393B5329ED2F2C00CACADA /* MyAppsOperator */ = {
 			isa = PBXGroup;
 			children = (
+				7F393B9029EE416600CACADA /* Scenes */,
 				7F393B7E29ED2F3200CACADA /* Network */,
 				7F393B5429ED2F2C00CACADA /* MyAppsOperatorApp.swift */,
-				7F393B5629ED2F2D00CACADA /* ContentView.swift */,
 				7F393B5829ED2F2D00CACADA /* Assets.xcassets */,
 				7F393B5A29ED2F2D00CACADA /* Preview Content */,
 			);
@@ -162,6 +162,14 @@
 				7F393B8C29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		7F393B9029EE416600CACADA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7F393B5629ED2F2D00CACADA /* ContentView.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
