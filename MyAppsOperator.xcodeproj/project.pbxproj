@@ -21,6 +21,7 @@
 		7F393B8829EE27A200CACADA /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8729EE27A200CACADA /* NetworkServiceTests.swift */; };
 		7F393B8A29EE2A9100CACADA /* NetworkDataCodableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8929EE2A9100CACADA /* NetworkDataCodableService.swift */; };
 		7F393B8D29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8C29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift */; };
+		7F393B9329EE42BA00CACADA /* CreateAnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		7F393B8729EE27A200CACADA /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		7F393B8929EE2A9100CACADA /* NetworkDataCodableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataCodableService.swift; sourceTree = "<group>"; };
 		7F393B8C29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataCodableServiceTests.swift; sourceTree = "<group>"; };
+		7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +169,18 @@
 		7F393B9029EE416600CACADA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7F393B9129EE419100CACADA /* Announcement */,
 				7F393B5629ED2F2D00CACADA /* ContentView.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7F393B9129EE419100CACADA /* Announcement */ = {
+			isa = PBXGroup;
+			children = (
+				7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */,
+			);
+			path = Announcement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F393B5729ED2F2D00CACADA /* ContentView.swift in Sources */,
+				7F393B9329EE42BA00CACADA /* CreateAnnouncementView.swift in Sources */,
 				7F393B8A29EE2A9100CACADA /* NetworkDataCodableService.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
