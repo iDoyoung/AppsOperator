@@ -29,7 +29,7 @@ final class NetworkSessionData: NetworkSessionDataProtocol {
     }
 }
 
-final class NetworkService {
+final class NetworkService: NetworkServicer {
     
     let configuration: NetworkAPIConfigurer
     let sessionData: NetworkSessionDataProtocol
