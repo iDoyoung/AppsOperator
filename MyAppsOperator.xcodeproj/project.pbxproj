@@ -17,6 +17,8 @@
 		7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */; };
 		7F393B8229ED330600CACADA /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8129ED330600CACADA /* Requester.swift */; };
 		7F393B8429ED349600CACADA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8329ED349600CACADA /* Endpoint.swift */; };
+		7F393B8629ED351600CACADA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8529ED351600CACADA /* NetworkService.swift */; };
+		7F393B8829EE27A200CACADA /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8729EE27A200CACADA /* NetworkServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIConfiguration.swift; sourceTree = "<group>"; };
 		7F393B8129ED330600CACADA /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		7F393B8329ED349600CACADA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7F393B8529ED351600CACADA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7F393B8729EE27A200CACADA /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				7F393B6529ED2F2D00CACADA /* MyAppsOperatorTests.swift */,
+				7F393B8729EE27A200CACADA /* NetworkServiceTests.swift */,
 			);
 			path = MyAppsOperatorTests;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				7F393B7F29ED2F5200CACADA /* NetworkAPIConfiguration.swift */,
 				7F393B8129ED330600CACADA /* Requester.swift */,
 				7F393B8329ED349600CACADA /* Endpoint.swift */,
+				7F393B8529ED351600CACADA /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
 				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
+				7F393B8629ED351600CACADA /* NetworkService.swift in Sources */,
 				7F393B8429ED349600CACADA /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F393B8829EE27A200CACADA /* NetworkServiceTests.swift in Sources */,
 				7F393B6629ED2F2D00CACADA /* MyAppsOperatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
