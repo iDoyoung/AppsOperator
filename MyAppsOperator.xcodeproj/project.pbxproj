@@ -22,7 +22,9 @@
 		7F393B8A29EE2A9100CACADA /* NetworkDataCodableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8929EE2A9100CACADA /* NetworkDataCodableService.swift */; };
 		7F393B8D29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B8C29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift */; };
 		7F393B9329EE42BA00CACADA /* CreateAnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */; };
-		7F393B9529EE874300CACADA /* CreateAnnouncementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9429EE874300CACADA /* CreateAnnouncementViewModel.swift */; };
+		7F393B9729EFBE2A00CACADA /* CreateAnnouncementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9629EFBE2A00CACADA /* CreateAnnouncementInteractor.swift */; };
+		7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9829EFBEBF00CACADA /* APIEndpoints.swift */; };
+		7F393B9B29EFC22E00CACADA /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9A29EFC22E00CACADA /* Announcement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +63,9 @@
 		7F393B8929EE2A9100CACADA /* NetworkDataCodableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataCodableService.swift; sourceTree = "<group>"; };
 		7F393B8C29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataCodableServiceTests.swift; sourceTree = "<group>"; };
 		7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementView.swift; sourceTree = "<group>"; };
-		7F393B9429EE874300CACADA /* CreateAnnouncementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementViewModel.swift; sourceTree = "<group>"; };
+		7F393B9629EFBE2A00CACADA /* CreateAnnouncementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementInteractor.swift; sourceTree = "<group>"; };
+		7F393B9829EFBEBF00CACADA /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		7F393B9A29EFC22E00CACADA /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		7F393B5329ED2F2C00CACADA /* MyAppsOperator */ = {
 			isa = PBXGroup;
 			children = (
+				7F393B9A29EFC22E00CACADA /* Announcement.swift */,
 				7F393B9029EE416600CACADA /* Scenes */,
 				7F393B7E29ED2F3200CACADA /* Network */,
 				7F393B5429ED2F2C00CACADA /* MyAppsOperatorApp.swift */,
@@ -155,6 +160,7 @@
 				7F393B8329ED349600CACADA /* Endpoint.swift */,
 				7F393B8529ED351600CACADA /* NetworkService.swift */,
 				7F393B8929EE2A9100CACADA /* NetworkDataCodableService.swift */,
+				7F393B9829EFBEBF00CACADA /* APIEndpoints.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -181,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */,
-				7F393B9429EE874300CACADA /* CreateAnnouncementViewModel.swift */,
+				7F393B9629EFBE2A00CACADA /* CreateAnnouncementInteractor.swift */,
 			);
 			path = Announcement;
 			sourceTree = "<group>";
@@ -318,10 +324,12 @@
 			files = (
 				7F393B5729ED2F2D00CACADA /* ContentView.swift in Sources */,
 				7F393B9329EE42BA00CACADA /* CreateAnnouncementView.swift in Sources */,
+				7F393B9729EFBE2A00CACADA /* CreateAnnouncementInteractor.swift in Sources */,
 				7F393B8A29EE2A9100CACADA /* NetworkDataCodableService.swift in Sources */,
+				7F393B9B29EFC22E00CACADA /* Announcement.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
+				7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
-				7F393B9529EE874300CACADA /* CreateAnnouncementViewModel.swift in Sources */,
 				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
 				7F393B8629ED351600CACADA /* NetworkService.swift in Sources */,
 				7F393B8429ED349600CACADA /* Endpoint.swift in Sources */,
