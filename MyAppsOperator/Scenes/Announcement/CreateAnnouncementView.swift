@@ -23,7 +23,7 @@ struct CreateAnnouncementView: View {
     var body: some View {
         VStack {
             TextField(
-                "Title",
+                "제목",
                 text: $title
             )
             .font(.title)
@@ -39,11 +39,23 @@ struct CreateAnnouncementView: View {
                     TextEditor(text: .constant(content.isEmpty ? contentPlaceholder : ""))
                         .foregroundColor(.gray)
                 }
+            Button(action: createAnnouncement) {
+                Text("공치하기")
+                    .frame(maxWidth: .infinity)
+            }
+            .tint(.red)
+            .buttonStyle(.borderedProminent)
+            .padding([.leading, .trailing], 5.0)
+            .controlSize(.large)
         }
         .onAppear {
             focusedField = .title
         }
         .padding()
+    }
+    
+    func createAnnouncement() {
+        print("POST TO SERVER")
     }
 }
 
