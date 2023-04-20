@@ -40,6 +40,7 @@ final class NetworkServiceTests: XCTestCase {
         var method: HTTPMethodType = .get
         var headerParameters: [String : String] = [:]
         var queryParameters: [String : String] = [:]
+        var encodableBodyParamater: Encodable?
         var bodyParameters: [String : Any] = [:]
     }
     
