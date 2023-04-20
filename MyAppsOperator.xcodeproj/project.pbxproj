@@ -25,6 +25,8 @@
 		7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9829EFBEBF00CACADA /* APIEndpoints.swift */; };
 		7F393B9B29EFC22E00CACADA /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9A29EFC22E00CACADA /* Announcement.swift */; };
 		7F393B9E29EFD56700CACADA /* SceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9D29EFD56700CACADA /* SceneDIContainer.swift */; };
+		7FD1653C29F0F7C900ECD524 /* AnnouncementWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653B29F0F7C900ECD524 /* AnnouncementWorker.swift */; };
+		7FD1653E29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653D29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		7F393B9829EFBEBF00CACADA /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		7F393B9A29EFC22E00CACADA /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		7F393B9D29EFD56700CACADA /* SceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDIContainer.swift; sourceTree = "<group>"; };
+		7FD1653B29F0F7C900ECD524 /* AnnouncementWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementWorker.swift; sourceTree = "<group>"; };
+		7FD1653D29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementWorkerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		7F393B5329ED2F2C00CACADA /* MyAppsOperator */ = {
 			isa = PBXGroup;
 			children = (
+				7F393B9F29F0F76D00CACADA /* Workers */,
 				7F393B9C29EFD26300CACADA /* Entries */,
 				7F393B9A29EFC22E00CACADA /* Announcement.swift */,
 				7F393B9029EE416600CACADA /* Scenes */,
@@ -140,6 +145,7 @@
 			children = (
 				7F393B8B29EE2F6F00CACADA /* Network */,
 				7F393B6529ED2F2D00CACADA /* MyAppsOperatorTests.swift */,
+				7FD1653D29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift */,
 			);
 			path = MyAppsOperatorTests;
 			sourceTree = "<group>";
@@ -198,6 +204,14 @@
 				7F393B9D29EFD56700CACADA /* SceneDIContainer.swift */,
 			);
 			path = Entries;
+			sourceTree = "<group>";
+		};
+		7F393B9F29F0F76D00CACADA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1653B29F0F7C900ECD524 /* AnnouncementWorker.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +348,7 @@
 				7F393B9329EE42BA00CACADA /* CreateAnnouncementView.swift in Sources */,
 				7F393B9E29EFD56700CACADA /* SceneDIContainer.swift in Sources */,
 				7F393B8A29EE2A9100CACADA /* NetworkDataCodableService.swift in Sources */,
+				7FD1653C29F0F7C900ECD524 /* AnnouncementWorker.swift in Sources */,
 				7F393B9B29EFC22E00CACADA /* Announcement.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
 				7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */,
@@ -348,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD1653E29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift in Sources */,
 				7F393B8829EE27A200CACADA /* NetworkServiceTests.swift in Sources */,
 				7F393B8D29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift in Sources */,
 				7F393B6629ED2F2D00CACADA /* MyAppsOperatorTests.swift in Sources */,
