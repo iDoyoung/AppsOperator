@@ -29,6 +29,7 @@ protocol Requester {
     var method: HTTPMethodType { get }
     var headerParameters: [String: String] { get }
     var queryParameters: [String: String] { get }
+    var encodableBodyParamater: Encodable? { get }
     var bodyParameters: [String: Any] { get }
     
     func requestURL(with networkConfiguration: NetworkAPIConfigurer) throws -> URLRequest
@@ -41,9 +42,14 @@ extension Requester {
         var urlRequest = URLRequest(url: url)
         var headers = configuration.headers
         headerParameters.forEach { headers.updateValue($1, forKey: $0)}
-        if !bodyParameters.isEmpty {
+        
+        // Setup Body
+        if let encodableBodyParamater {
+            urlRequest.httpBody = try JSONEncoder().encode(encodableBodyParamater)
+        } else if !bodyParameters.isEmpty {
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: bodyParameters)
         }
+        
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields = headers
         return urlRequest
