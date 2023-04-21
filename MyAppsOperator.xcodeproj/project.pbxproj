@@ -27,6 +27,7 @@
 		7F393B9E29EFD56700CACADA /* SceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F393B9D29EFD56700CACADA /* SceneDIContainer.swift */; };
 		7FD1653C29F0F7C900ECD524 /* AnnouncementWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653B29F0F7C900ECD524 /* AnnouncementWorker.swift */; };
 		7FD1653E29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653D29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift */; };
+		7FD1654029F234C200ECD524 /* CreateAnnouncementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		7F393B9D29EFD56700CACADA /* SceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDIContainer.swift; sourceTree = "<group>"; };
 		7FD1653B29F0F7C900ECD524 /* AnnouncementWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementWorker.swift; sourceTree = "<group>"; };
 		7FD1653D29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementWorkerTests.swift; sourceTree = "<group>"; };
+		7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */,
+				7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */,
 			);
 			path = Announcement;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				7F393B9B29EFC22E00CACADA /* Announcement.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
 				7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */,
+				7FD1654029F234C200ECD524 /* CreateAnnouncementInteractor.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
 				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
 				7F393B8629ED351600CACADA /* NetworkService.swift in Sources */,
