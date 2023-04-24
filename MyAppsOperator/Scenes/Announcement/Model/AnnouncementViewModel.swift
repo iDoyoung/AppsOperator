@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class AnnouncementViewModel: ObservableObject {
-    @Published var title: String = ""
-    @Published var content: String = ""
-    @Published var createdAt: String? = nil
-    @Published var deletedAt: String? = nil
+struct AnnouncementViewModel {
+    var title: String = ""
+    var content: String = ""
+    var createdAt: String? = nil
+    var deletedAt: String? = nil
 }
