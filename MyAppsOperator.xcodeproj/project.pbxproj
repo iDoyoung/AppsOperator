@@ -30,6 +30,7 @@
 		7FD1654029F234C200ECD524 /* CreateAnnouncementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */; };
 		7FD1654529F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654429F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift */; };
 		7FD1654729F4E7CA00ECD524 /* AnnouncementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654629F4E7CA00ECD524 /* AnnouncementViewModel.swift */; };
+		7FD1654A29F665B800ECD524 /* CreateAnnouncementAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654929F665B800ECD524 /* CreateAnnouncementAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementInteractor.swift; sourceTree = "<group>"; };
 		7FD1654429F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementInteractorTests.swift; sourceTree = "<group>"; };
 		7FD1654629F4E7CA00ECD524 /* AnnouncementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewModel.swift; sourceTree = "<group>"; };
+		7FD1654929F665B800ECD524 /* CreateAnnouncementAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				7FD1654829F61B6100ECD524 /* Model */,
 				7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */,
 				7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */,
+				7FD1654929F665B800ECD524 /* CreateAnnouncementAlert.swift */,
 			);
 			path = Announcement;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
 				7F393B8629ED351600CACADA /* NetworkService.swift in Sources */,
 				7F393B8429ED349600CACADA /* Endpoint.swift in Sources */,
+				7FD1654A29F665B800ECD524 /* CreateAnnouncementAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
