@@ -29,6 +29,7 @@
 		7FD1653E29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653D29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift */; };
 		7FD1654029F234C200ECD524 /* CreateAnnouncementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */; };
 		7FD1654529F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654429F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift */; };
+		7FD1654729F4E7CA00ECD524 /* AnnouncementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654629F4E7CA00ECD524 /* AnnouncementViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		7FD1653D29F0FFDB00ECD524 /* AnnouncementWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementWorkerTests.swift; sourceTree = "<group>"; };
 		7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementInteractor.swift; sourceTree = "<group>"; };
 		7FD1654429F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementInteractorTests.swift; sourceTree = "<group>"; };
+		7FD1654629F4E7CA00ECD524 /* AnnouncementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		7F393B9129EE419100CACADA /* Announcement */ = {
 			isa = PBXGroup;
 			children = (
+				7FD1654829F61B6100ECD524 /* Model */,
 				7F393B9229EE42BA00CACADA /* CreateAnnouncementView.swift */,
 				7FD1653F29F234C200ECD524 /* CreateAnnouncementInteractor.swift */,
 			);
@@ -226,6 +229,14 @@
 				7FD1654429F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7FD1654829F61B6100ECD524 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1654629F4E7CA00ECD524 /* AnnouncementViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +376,7 @@
 				7FD1653C29F0F7C900ECD524 /* AnnouncementWorker.swift in Sources */,
 				7F393B9B29EFC22E00CACADA /* Announcement.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
+				7FD1654729F4E7CA00ECD524 /* AnnouncementViewModel.swift in Sources */,
 				7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */,
 				7FD1654029F234C200ECD524 /* CreateAnnouncementInteractor.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
