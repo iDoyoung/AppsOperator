@@ -11,21 +11,25 @@ protocol CreateAnnouncementUseCase {
     func create()
 }
 
-final class CreateAnnouncementInteractor {
-    
+final class CreateAnnouncementInteractor: ObservableObject {
+
     // MARK: - Properties
     
     // Components
-    private var worker: AnnouncementWorkerProtocol
+    var worker: AnnouncementWorkerProtocol?
+    var stateController: CreateAnnouncementStateUpdater?
     
     // MARK: - Methods
-    init(worker: AnnouncementWorkerProtocol) {
-        self.worker = worker
-    }
     
     // Use Case
-    func create(_ annoucement: Announcement) async throws {
-        try await worker.create(annoucement)
-        
+    func create(title: String, content: String) async throws {
+        guard let worker,
+              let stateController else { fatalError("Must be init") }
+        let annoucement = Announcement(title: title, content: content)
+        do {
+            try await worker.create(annoucement)
+        } catch let error {
+            await stateController.updateErrorAlert(with: error)
+        }
     }
 }
