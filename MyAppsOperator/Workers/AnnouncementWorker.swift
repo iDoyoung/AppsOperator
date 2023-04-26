@@ -15,6 +15,10 @@ final class AnnouncementWorker: AnnouncementWorkerProtocol {
     
     var network: NetworkDataCodableServicer?
         
+    init(network: NetworkDataCodableServicer? = nil) {
+        self.network = network
+    }
+    
     @discardableResult func create(_ annoucement: Announcement) async throws -> Announcement {
         guard let network else { fatalError("Network service is Nil") }
         let endpoint = APIEndpoints.createAnnouncement(annoucement)
