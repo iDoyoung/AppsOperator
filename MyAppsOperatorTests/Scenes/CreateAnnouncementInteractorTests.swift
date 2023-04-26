@@ -17,7 +17,8 @@ final class CreateAnnouncementInteractorTests: XCTestCase {
     override func setUpWithError() throws {
         try super.setUpWithError()
         workerSpy = WorkerSpy()
-        sut = CreateAnnouncementInteractor(worker: workerSpy)
+        stateControllerSpy = CreateAnnouncementStateUpdaterSpy()
+        sut = CreateAnnouncementInteractor()
     }
 
     override func tearDownWithError() throws {
@@ -28,6 +29,7 @@ final class CreateAnnouncementInteractorTests: XCTestCase {
     
     //MARK: - Test Doubles
     var workerSpy: WorkerSpy!
+    var stateControllerSpy: CreateAnnouncementStateUpdater!
     
     final class WorkerSpy: AnnouncementWorkerProtocol {
         var createCalled = false
@@ -38,12 +40,21 @@ final class CreateAnnouncementInteractorTests: XCTestCase {
         }
     }
     
+    final class CreateAnnouncementStateUpdaterSpy: CreateAnnouncementStateUpdater {
+        var updateErrorAlertCalled = false
+        
+        func updateErrorAlert(with error: Error) {
+            updateErrorAlertCalled = true
+        }
+    }
+    
     //MARK: - Tests
     func test_create() async throws {
         // given
-        
+        sut.worker = workerSpy
+        sut.stateController = stateControllerSpy
         // when
-        try await sut.create(Announcement(title: "Test", content: "Unit test of create a Announcement"))
+        try await sut.create(title: "Test", content: "Unit test")
         
         // then
         XCTAssertTrue(workerSpy.createCalled)
