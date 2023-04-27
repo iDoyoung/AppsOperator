@@ -20,12 +20,12 @@ final class AnnouncementListInteractor {
     
     //MARK: - Method
     
-    // User Case
+    // Use Case
     func fetchList() async throws {
         guard let worker else { fatalError("Must be not nil") }
+        
+        _ = try await worker.fetch()
         do {
-            let fetched = try await worker.fetch
-            
             // TODO: Call State Controller
         } catch let error {
             // TODO: Call State Controller
