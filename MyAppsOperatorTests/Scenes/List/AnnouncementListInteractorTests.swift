@@ -18,6 +18,7 @@ final class AnnouncementListInteractorTests: XCTestCase {
         try super.setUpWithError()
         sut = AnnouncementListInteractor()
         workerSpy = WorkerSpy()
+        announcementListStateControllerSpy = AnnouncementListStateControllerSpy()
     }
 
     override func tearDownWithError() throws {
@@ -28,13 +29,19 @@ final class AnnouncementListInteractorTests: XCTestCase {
     
     //MARK: - TestDoubles
     var workerSpy: WorkerSpy!
+    var announcementListStateControllerSpy: AnnouncementListStateControllerSpy!
+    
     final class WorkerSpy: AnnouncementWorkerProtocol {
         
+        var error: Error? = nil
         var fetchCalled = false
         var fetched = [Announcement]()
         
         func fetch() async throws -> [MyAppsOperator.Announcement] {
             fetchCalled = true
+            if error != nil {
+                throw error!
+            }
             return fetched
         }
         
@@ -43,10 +50,25 @@ final class AnnouncementListInteractorTests: XCTestCase {
         }
     }
     
+    final class AnnouncementListStateControllerSpy: AnnouncementListStateUpdater {
+        
+        var updateFetchedAnnouncementsCalled = false
+        var updateErrorAlertCalled = false
+        
+        func updateFetchedAnnouncements(_ list: [MyAppsOperator.Announcement]) {
+            updateFetchedAnnouncementsCalled = true
+        }
+        
+        func updateErrorAlert(_ error: Error) {
+            updateErrorAlertCalled = true
+        }
+    }
+     
     //MARK: - Tests
-    func test_fetchList() async throws {
+    func test_fetchList_whenIsNotError() async throws {
         // given
         sut.worker = workerSpy
+        sut.stateController = announcementListStateControllerSpy
         workerSpy.fetched = [Announcement(title: "Test", content: "Test Of Unit Test")]
         
         // when
@@ -54,5 +76,20 @@ final class AnnouncementListInteractorTests: XCTestCase {
         
         // then
         XCTAssertTrue(workerSpy.fetchCalled)
+        XCTAssertTrue(announcementListStateControllerSpy.updateFetchedAnnouncementsCalled)
+    }
+    
+    func test_fetchList_whenIsError() async throws {
+        // given
+        workerSpy.error = NetworkError.timeOut
+        sut.worker = workerSpy
+        sut.stateController = announcementListStateControllerSpy
+        
+        // when
+        try await sut.fetchList()
+        
+        // then
+        XCTAssertTrue(workerSpy.fetchCalled)
+        XCTAssertTrue(announcementListStateControllerSpy.updateErrorAlertCalled)
     }
 }

@@ -17,18 +17,19 @@ final class AnnouncementListInteractor {
     
     // Components
     var worker: AnnouncementWorkerProtocol?
+    var stateController: AnnouncementListStateUpdater?
     
     //MARK: - Method
     
     // Use Case
     func fetchList() async throws {
         guard let worker else { fatalError("Must be not nil") }
+        async let item = worker.fetch()
         
-        _ = try await worker.fetch()
         do {
-            // TODO: Call State Controller
+            try await stateController?.updateFetchedAnnouncements(item)
         } catch let error {
-            // TODO: Call State Controller
+            await stateController?.updateErrorAlert(error)
         }
     }
 }

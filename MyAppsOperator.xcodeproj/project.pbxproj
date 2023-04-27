@@ -38,6 +38,8 @@
 		7FD1655829FA0F6D00ECD524 /* AnnouncementListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */; };
 		7FD1655C29FA21A200ECD524 /* AnnouncementListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655B29FA21A200ECD524 /* AnnouncementListInteractorTests.swift */; };
 		7FD1655E29FA342000ECD524 /* AnnouncementListStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655D29FA342000ECD524 /* AnnouncementListStateController.swift */; };
+		7FD1656029FA4B8000ECD524 /* FetchAnnounceErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655F29FA4B8000ECD524 /* FetchAnnounceErrorAlert.swift */; };
+		7FD1656429FA4E9200ECD524 /* AnnouncementListStateControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1656329FA4E9200ECD524 /* AnnouncementListStateControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListInteractor.swift; sourceTree = "<group>"; };
 		7FD1655B29FA21A200ECD524 /* AnnouncementListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListInteractorTests.swift; sourceTree = "<group>"; };
 		7FD1655D29FA342000ECD524 /* AnnouncementListStateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListStateController.swift; sourceTree = "<group>"; };
+		7FD1655F29FA4B8000ECD524 /* FetchAnnounceErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAnnounceErrorAlert.swift; sourceTree = "<group>"; };
+		7FD1656329FA4E9200ECD524 /* AnnouncementListStateControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListStateControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,7 @@
 				7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */,
 				7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */,
 				7FD1655D29FA342000ECD524 /* AnnouncementListStateController.swift */,
+				7FD1655F29FA4B8000ECD524 /* FetchAnnounceErrorAlert.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				7FD1655B29FA21A200ECD524 /* AnnouncementListInteractorTests.swift */,
+				7FD1656329FA4E9200ECD524 /* AnnouncementListStateControllerTests.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 				7FD1655E29FA342000ECD524 /* AnnouncementListStateController.swift in Sources */,
 				7F393B5729ED2F2D00CACADA /* ContentView.swift in Sources */,
 				7F393B9329EE42BA00CACADA /* CreateAnnouncementView.swift in Sources */,
+				7FD1656029FA4B8000ECD524 /* FetchAnnounceErrorAlert.swift in Sources */,
 				7F393B9E29EFD56700CACADA /* SceneDIContainer.swift in Sources */,
 				7F393B8A29EE2A9100CACADA /* NetworkDataCodableService.swift in Sources */,
 				7FD1653C29F0F7C900ECD524 /* AnnouncementWorker.swift in Sources */,
@@ -456,6 +463,7 @@
 				7FD1654529F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift in Sources */,
 				7F393B8829EE27A200CACADA /* NetworkServiceTests.swift in Sources */,
 				7F393B8D29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift in Sources */,
+				7FD1656429FA4E9200ECD524 /* AnnouncementListStateControllerTests.swift in Sources */,
 				7FD1654E29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift in Sources */,
 				7F393B6629ED2F2D00CACADA /* MyAppsOperatorTests.swift in Sources */,
 				7FD1655C29FA21A200ECD524 /* AnnouncementListInteractorTests.swift in Sources */,
