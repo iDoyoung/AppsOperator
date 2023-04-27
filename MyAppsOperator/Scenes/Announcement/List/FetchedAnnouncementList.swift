@@ -8,5 +8,5 @@
 import Foundation
 
 final class FetchedAnnouncementList: ObservableObject {
-    var items: [AnnouncementViewModel] = []
+    @Published var items: [AnnouncementViewModel] = []
 }

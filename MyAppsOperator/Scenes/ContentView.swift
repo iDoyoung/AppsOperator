@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+   
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            AnnouncementListView()
+                .tabItem {
+                    Label("리스트", systemImage: "list.bullet.clipboard")
+                }
+            CreateAnnouncementView()
+                .tabItem {
+                    Label("추가", systemImage: "plus.circle")
+                }
         }
+        .tint(.red)
         .padding()
     }
 }

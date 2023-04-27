@@ -8,7 +8,7 @@
 import Foundation
  
 protocol CreateAnnouncementUseCase {
-    func create()
+    func create(title: String, content: String) async throws
 }
 
 final class CreateAnnouncementInteractor: ObservableObject {

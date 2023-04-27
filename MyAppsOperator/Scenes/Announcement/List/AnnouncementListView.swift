@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AnnouncementListView: View {
     
-    @StateObject var fetchedAnnouncements = FetchedAnnouncementList()
+    @StateObject var fetchedAnnouncements: FetchedAnnouncementList
     
     var body: some View {
         NavigationStack {
@@ -19,6 +19,11 @@ struct AnnouncementListView: View {
             }
             .navigationTitle("공지사항")
         }
+    }
+    
+    init() {
+        let fetchedAnnouncements = FetchedAnnouncementList()
+        _fetchedAnnouncements = StateObject(wrappedValue: { fetchedAnnouncements }())
     }
 }
 
