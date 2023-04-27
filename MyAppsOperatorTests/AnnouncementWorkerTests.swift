@@ -39,6 +39,21 @@ final class AnnouncementWorkerTests: XCTestCase {
     }
     
     //MARK: - Tests
+    func test_fetch() async throws {
+        // given
+        let mockData = Announcement(title: "Test", content: "Unit test of create a Announcement")
+        networkServiceSpy.dataMock = try JSONEncoder().encode([mockData])
+        networkServiceMock = NetworkDataCodableService(network: networkServiceSpy)
+        sut.network = networkServiceMock
+        
+        // when
+        let fetched = try await sut.fetch()
+        
+        // then
+        XCTAssertTrue(networkServiceSpy.networkCalled)
+        XCTAssertTrue(fetched.contains(mockData))
+    }
+    
     func test_create() async throws {
         // given
         let mockData = Announcement(title: "Test", content: "Unit test of create a Announcement")
@@ -52,5 +67,4 @@ final class AnnouncementWorkerTests: XCTestCase {
         // then
         XCTAssertTrue(networkServiceSpy.networkCalled)
     }
-    
 }
