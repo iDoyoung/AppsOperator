@@ -33,6 +33,8 @@
 		7FD1654A29F665B800ECD524 /* CreateAnnouncementErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654929F665B800ECD524 /* CreateAnnouncementErrorAlert.swift */; };
 		7FD1654C29F7806A00ECD524 /* CreateAnnouncementStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654B29F7806A00ECD524 /* CreateAnnouncementStateController.swift */; };
 		7FD1654E29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654D29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift */; };
+		7FD1655429F900E800ECD524 /* AnnouncementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655329F900E800ECD524 /* AnnouncementListView.swift */; };
+		7FD1655629F9075B00ECD524 /* FetchedAnnouncementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		7FD1654929F665B800ECD524 /* CreateAnnouncementErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementErrorAlert.swift; sourceTree = "<group>"; };
 		7FD1654B29F7806A00ECD524 /* CreateAnnouncementStateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementStateController.swift; sourceTree = "<group>"; };
 		7FD1654D29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementStateControllerTests.swift; sourceTree = "<group>"; };
+		7FD1655329F900E800ECD524 /* AnnouncementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListView.swift; sourceTree = "<group>"; };
+		7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedAnnouncementList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 		7F393B9129EE419100CACADA /* Announcement */ = {
 			isa = PBXGroup;
 			children = (
+				7FD1655029F9003D00ECD524 /* List */,
 				7FD1654F29F8FD0800ECD524 /* Create */,
 				7FD1654829F61B6100ECD524 /* Model */,
 			);
@@ -254,6 +259,15 @@
 				7FD1654B29F7806A00ECD524 /* CreateAnnouncementStateController.swift */,
 			);
 			path = Create;
+			sourceTree = "<group>";
+		};
+		7FD1655029F9003D00ECD524 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1655329F900E800ECD524 /* AnnouncementListView.swift */,
+				7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +405,7 @@
 				7F393B9E29EFD56700CACADA /* SceneDIContainer.swift in Sources */,
 				7F393B8A29EE2A9100CACADA /* NetworkDataCodableService.swift in Sources */,
 				7FD1653C29F0F7C900ECD524 /* AnnouncementWorker.swift in Sources */,
+				7FD1655629F9075B00ECD524 /* FetchedAnnouncementList.swift in Sources */,
 				7F393B9B29EFC22E00CACADA /* Announcement.swift in Sources */,
 				7FD1654C29F7806A00ECD524 /* CreateAnnouncementStateController.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
@@ -398,6 +413,7 @@
 				7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */,
 				7FD1654029F234C200ECD524 /* CreateAnnouncementInteractor.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
+				7FD1655429F900E800ECD524 /* AnnouncementListView.swift in Sources */,
 				7F393B8029ED2F5200CACADA /* NetworkAPIConfiguration.swift in Sources */,
 				7F393B8629ED351600CACADA /* NetworkService.swift in Sources */,
 				7F393B8429ED349600CACADA /* Endpoint.swift in Sources */,
