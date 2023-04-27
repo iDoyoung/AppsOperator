@@ -36,6 +36,7 @@
 		7FD1655429F900E800ECD524 /* AnnouncementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655329F900E800ECD524 /* AnnouncementListView.swift */; };
 		7FD1655629F9075B00ECD524 /* FetchedAnnouncementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */; };
 		7FD1655829FA0F6D00ECD524 /* AnnouncementListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */; };
+		7FD1655C29FA21A200ECD524 /* AnnouncementListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655B29FA21A200ECD524 /* AnnouncementListInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		7FD1655329F900E800ECD524 /* AnnouncementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListView.swift; sourceTree = "<group>"; };
 		7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedAnnouncementList.swift; sourceTree = "<group>"; };
 		7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListInteractor.swift; sourceTree = "<group>"; };
+		7FD1655B29FA21A200ECD524 /* AnnouncementListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		7FD1654329F24CB800ECD524 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7FD1655A29FA213300ECD524 /* List */,
 				7FD1655929FA20AF00ECD524 /* Create */,
 			);
 			path = Scenes;
@@ -279,6 +282,14 @@
 				7FD1654D29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift */,
 			);
 			path = Create;
+			sourceTree = "<group>";
+		};
+		7FD1655A29FA213300ECD524 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1655B29FA21A200ECD524 /* AnnouncementListInteractorTests.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +454,7 @@
 				7F393B8D29EE2F8E00CACADA /* NetworkDataCodableServiceTests.swift in Sources */,
 				7FD1654E29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift in Sources */,
 				7F393B6629ED2F2D00CACADA /* MyAppsOperatorTests.swift in Sources */,
+				7FD1655C29FA21A200ECD524 /* AnnouncementListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
