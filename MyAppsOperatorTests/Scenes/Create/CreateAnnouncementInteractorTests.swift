@@ -32,7 +32,12 @@ final class CreateAnnouncementInteractorTests: XCTestCase {
     var stateControllerSpy: CreateAnnouncementStateUpdater!
     
     final class WorkerSpy: AnnouncementWorkerProtocol {
+        
         var createCalled = false
+        
+        func fetch() async throws -> [MyAppsOperator.Announcement] {
+            return []
+        }
         
         func create(_ annoucement: MyAppsOperator.Announcement) async throws -> MyAppsOperator.Announcement {
             createCalled = true
