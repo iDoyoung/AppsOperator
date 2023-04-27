@@ -35,6 +35,7 @@
 		7FD1654E29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1654D29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift */; };
 		7FD1655429F900E800ECD524 /* AnnouncementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655329F900E800ECD524 /* AnnouncementListView.swift */; };
 		7FD1655629F9075B00ECD524 /* FetchedAnnouncementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */; };
+		7FD1655829FA0F6D00ECD524 /* AnnouncementListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		7FD1654D29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnouncementStateControllerTests.swift; sourceTree = "<group>"; };
 		7FD1655329F900E800ECD524 /* AnnouncementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListView.swift; sourceTree = "<group>"; };
 		7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedAnnouncementList.swift; sourceTree = "<group>"; };
+		7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,8 +238,7 @@
 		7FD1654329F24CB800ECD524 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7FD1654429F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift */,
-				7FD1654D29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift */,
+				7FD1655929FA20AF00ECD524 /* Create */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -266,8 +267,18 @@
 			children = (
 				7FD1655329F900E800ECD524 /* AnnouncementListView.swift */,
 				7FD1655529F9075B00ECD524 /* FetchedAnnouncementList.swift */,
+				7FD1655729FA0F6D00ECD524 /* AnnouncementListInteractor.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		7FD1655929FA20AF00ECD524 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1654429F24CEB00ECD524 /* CreateAnnouncementInteractorTests.swift */,
+				7FD1654D29F8D47000ECD524 /* CreateAnnouncementStateControllerTests.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +421,7 @@
 				7FD1654C29F7806A00ECD524 /* CreateAnnouncementStateController.swift in Sources */,
 				7F393B5529ED2F2C00CACADA /* MyAppsOperatorApp.swift in Sources */,
 				7FD1654729F4E7CA00ECD524 /* AnnouncementViewModel.swift in Sources */,
+				7FD1655829FA0F6D00ECD524 /* AnnouncementListInteractor.swift in Sources */,
 				7F393B9929EFBEBF00CACADA /* APIEndpoints.swift in Sources */,
 				7FD1654029F234C200ECD524 /* CreateAnnouncementInteractor.swift in Sources */,
 				7F393B8229ED330600CACADA /* Requester.swift in Sources */,
