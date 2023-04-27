@@ -8,7 +8,8 @@
 import Foundation
 
 protocol AnnouncementWorkerProtocol {
-    @discardableResult func create(_ annoucement: Announcement) async throws -> Announcement
+    func fetch() async throws -> [Announcement]
+    @discardableResult func create(_ announcement: Announcement) async throws -> Announcement
 }
 
 final class AnnouncementWorker: AnnouncementWorkerProtocol {
@@ -25,9 +26,9 @@ final class AnnouncementWorker: AnnouncementWorkerProtocol {
         return try await network.request(with: endpoint)
     }
     
-    @discardableResult func create(_ annoucement: Announcement) async throws -> Announcement {
+    @discardableResult func create(_ announcement: Announcement) async throws -> Announcement {
         guard let network else { fatalError("Nil: Network service is \"nil\"") }
-        let endpoint = APIEndpoints.createAnnouncement(annoucement)
+        let endpoint = APIEndpoints.createAnnouncement(announcement)
         return try await network.request(with: endpoint)
     }
 }

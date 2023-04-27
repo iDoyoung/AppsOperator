@@ -38,8 +38,8 @@ final class AnnouncementListInteractorTests: XCTestCase {
             return fetched
         }
         
-        func create(_ annoucement: MyAppsOperator.Announcement) async throws -> MyAppsOperator.Announcement {
-            return annoucement
+        func create(_ announcement: MyAppsOperator.Announcement) async throws -> MyAppsOperator.Announcement {
+            return announcement
         }
     }
     
