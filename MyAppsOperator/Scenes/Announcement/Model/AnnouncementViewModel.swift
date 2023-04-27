@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct AnnouncementViewModel {
+struct AnnouncementViewModel: Identifiable, Hashable {
+    var id: UUID? = nil
     var title: String = ""
     var content: String = ""
     var createdAt: String? = nil
