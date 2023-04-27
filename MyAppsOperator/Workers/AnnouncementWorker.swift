@@ -19,8 +19,14 @@ final class AnnouncementWorker: AnnouncementWorkerProtocol {
         self.network = network
     }
     
+    func fetch() async throws -> [Announcement] {
+        guard let network else { fatalError("Nil: Network service is \"nil\"") }
+        let endpoint = APIEndpoints.fetchAnnouncements()
+        return try await network.request(with: endpoint)
+    }
+    
     @discardableResult func create(_ annoucement: Announcement) async throws -> Announcement {
-        guard let network else { fatalError("Network service is Nil") }
+        guard let network else { fatalError("Nil: Network service is \"nil\"") }
         let endpoint = APIEndpoints.createAnnouncement(annoucement)
         return try await network.request(with: endpoint)
     }

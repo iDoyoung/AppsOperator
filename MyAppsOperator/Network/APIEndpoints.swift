@@ -9,6 +9,10 @@ import Foundation
 
 struct APIEndpoints {
     
+    static func fetchAnnouncements() -> Endpoint<[Announcement]> {
+        return Endpoint(path: "announcements")
+    }
+    
     static func createAnnouncement(_ announcement: Announcement) -> Endpoint<Announcement> {
        return Endpoint(path: "new", encodableBodyParamater: announcement)
     }
