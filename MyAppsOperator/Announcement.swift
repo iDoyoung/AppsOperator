@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Announcement: Codable {
+struct Announcement: Hashable, Codable {
     var id: UUID?
     var title: String
     var content: String
