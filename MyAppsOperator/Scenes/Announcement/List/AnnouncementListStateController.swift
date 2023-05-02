@@ -12,7 +12,7 @@ protocol AnnouncementListStateUpdater {
     @MainActor func updateErrorAlert(_ error: Error)
 }
 
-final class AnnouncementListStateController {
+final class AnnouncementListStateController: AnnouncementListStateUpdater {
     
     var fetchedAnnouncements: FetchedAnnouncementList?
     
@@ -25,7 +25,9 @@ final class AnnouncementListStateController {
             )
         }
         
-        fetchedAnnouncements?.items = viewModel
+        DispatchQueue.main.async { [weak self] in
+            self?.fetchedAnnouncements?.items = viewModel
+        }
     }
     
     @MainActor func updateErrorAlert(_ error: Error) {
