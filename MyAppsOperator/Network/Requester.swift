@@ -46,6 +46,7 @@ extension Requester {
         // Setup Body
         if let encodableBodyParamater {
             urlRequest.httpBody = try JSONEncoder().encode(encodableBodyParamater)
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         } else if !bodyParameters.isEmpty {
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: bodyParameters)
         }
