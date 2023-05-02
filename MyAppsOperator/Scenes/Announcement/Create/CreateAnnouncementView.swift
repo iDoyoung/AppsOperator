@@ -24,7 +24,7 @@ struct CreateAnnouncementView: View, CreateAnnouncementViewState {
         network: NetworkDataCodableService(
             network: NetworkService(
                 configuration: NetworkAPIConfiguration(
-                    baseURL: URL(string: "http://127.0.0.1:8080")!
+                    baseURL: URL(string: "http://127.0.0.1:8080/announcements")!
                 )
             )
         )
