@@ -57,7 +57,7 @@ extension Requester {
     
     private func getURL(with configuration: NetworkAPIConfigurer) throws -> URL {
         var baseURL = configuration.baseURL.absoluteString.last != "/" ? configuration.baseURL.absoluteString.appending("/") : configuration.baseURL.absoluteString
-        if baseURL.prefix(7) != "http://" || baseURL.prefix(8) != "https://" {
+        if baseURL.prefix(7) != "http://" && baseURL.prefix(8) != "https://" {
            baseURL = "https://" + baseURL
         }
         let endpoint = isFullPath ? path: baseURL.appending(path)
