@@ -11,6 +11,6 @@ struct Announcement: Hashable, Codable {
     var id: UUID?
     var title: String
     var content: String
-    var createdAt: Date?
-    var deletedAt: Date?
+    var createdAt: String?
+    var deletedAt: String?
 }
