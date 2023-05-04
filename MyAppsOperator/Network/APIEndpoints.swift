@@ -16,5 +16,8 @@ struct APIEndpoints {
     static func createAnnouncement(_ announcement: Announcement) -> Endpoint<Announcement> {
         return Endpoint(path: "new", method: .post, encodableBodyParameter: announcement)
     }
-   
+    
+    static func deleteAnnouncement(with id: String) -> Endpoint<String> {
+        return Endpoint(path: id, method: .delete)
+    }
 }
