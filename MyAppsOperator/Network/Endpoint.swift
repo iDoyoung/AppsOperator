@@ -16,7 +16,7 @@ struct Endpoint<R>: ResponseRequester {
     var method: HTTPMethodType
     var headerParameters: [String: String]
     var queryParameters: [String: String]
-    var encodableBodyParamater: Encodable?
+    var encodableBodyParameter: Encodable?
     var bodyParameters: [String: Any]
     
     init(
@@ -25,7 +25,7 @@ struct Endpoint<R>: ResponseRequester {
         method: HTTPMethodType = .get,
         headerParameters: [String: String] = [:],
         queryParameters: [String: String] = [:],
-        encodableBodyParamater: Encodable? = nil,
+        encodableBodyParameter: Encodable? = nil,
         bodyParameters: [String: Any] = [:]
     ) {
         self.path = path
@@ -33,7 +33,7 @@ struct Endpoint<R>: ResponseRequester {
         self.method = method
         self.headerParameters = headerParameters
         self.queryParameters = queryParameters
-        self.encodableBodyParamater = encodableBodyParamater
+        self.encodableBodyParameter = encodableBodyParameter
         self.bodyParameters = bodyParameters
     }
 }

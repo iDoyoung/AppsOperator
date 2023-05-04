@@ -14,6 +14,7 @@ struct APIEndpoints {
     }
     
     static func createAnnouncement(_ announcement: Announcement) -> Endpoint<Announcement> {
-        return Endpoint(path: "new", method: .post, encodableBodyParamater: announcement)
+        return Endpoint(path: "new", method: .post, encodableBodyParameter: announcement)
     }
+   
 }
