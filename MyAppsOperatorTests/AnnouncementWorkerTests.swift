@@ -62,9 +62,25 @@ final class AnnouncementWorkerTests: XCTestCase {
         sut.network = networkServiceMock
         
         // when
-        try await sut.create(mockData)
+        let expectation = try await sut.create(mockData)
         
         // then
         XCTAssertTrue(networkServiceSpy.networkCalled)
+        XCTAssertEqual(expectation, mockData)
+    }
+    
+    func test_delete() async throws {
+        // given
+        let mockData = UUID()
+        networkServiceSpy.dataMock = try JSONEncoder().encode(mockData)
+        networkServiceMock = NetworkDataCodableService(network: networkServiceSpy)
+        sut.network = networkServiceMock
+
+        // when
+        let expectation = try await sut.delete(with: mockData.uuidString)
+        
+        // then
+        XCTAssertTrue(networkServiceSpy.networkCalled)
+        XCTAssertEqual(mockData.uuidString, expectation)
     }
 }
