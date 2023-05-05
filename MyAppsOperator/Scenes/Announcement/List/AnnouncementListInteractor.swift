@@ -32,4 +32,11 @@ final class AnnouncementListInteractor {
             await stateController?.updateErrorAlert(error)
         }
     }
+    
+    func deleteItem(_ id: UUID?) async throws {
+        guard let worker,
+              let id = id?.uuidString else { fatalError("Must be not nil") }
+        async let deleted = worker.delete(with: id)
+        try await stateController?.deleteAnnouncement(deleted)
+    }
 }

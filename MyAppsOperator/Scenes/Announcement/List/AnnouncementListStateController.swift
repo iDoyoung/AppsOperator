@@ -9,6 +9,7 @@ import Foundation
 
 protocol AnnouncementListStateUpdater {
     func updateFetchedAnnouncements(_ list: [Announcement])
+    func deleteAnnouncement(_ title: String)
     @MainActor func updateErrorAlert(_ error: Error)
 }
 
@@ -28,6 +29,12 @@ final class AnnouncementListStateController: AnnouncementListStateUpdater {
         DispatchQueue.main.async { [weak self] in
             self?.fetchedAnnouncements?.items = viewModel
         }
+    }
+    
+    func deleteAnnouncement(_ title: String) {
+        #if DEBUG
+        print("Delete \(title)")
+        #endif
     }
     
     @MainActor func updateErrorAlert(_ error: Error) {
