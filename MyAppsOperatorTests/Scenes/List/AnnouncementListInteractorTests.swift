@@ -34,8 +34,12 @@ final class AnnouncementListInteractorTests: XCTestCase {
     final class WorkerSpy: AnnouncementWorkerProtocol {
         
         var error: Error? = nil
-        var fetchCalled = false
+        var mockData: Announcement? = nil
         var fetched = [Announcement]()
+        
+        var fetchCalled = false
+        var createCalled = false
+        var deleteCalled = false
         
         func fetch() async throws -> [MyAppsOperator.Announcement] {
             fetchCalled = true
@@ -46,7 +50,13 @@ final class AnnouncementListInteractorTests: XCTestCase {
         }
         
         func create(_ announcement: MyAppsOperator.Announcement) async throws -> MyAppsOperator.Announcement {
+            createCalled = true
             return announcement
+        }
+        
+        func delete(with id: String) async throws -> String {
+            deleteCalled = true
+            return mockData!.title
         }
     }
     
@@ -54,6 +64,7 @@ final class AnnouncementListInteractorTests: XCTestCase {
         
         var updateFetchedAnnouncementsCalled = false
         var updateErrorAlertCalled = false
+        var deleteAnnouncementCalled = false
         
         func updateFetchedAnnouncements(_ list: [MyAppsOperator.Announcement]) {
             updateFetchedAnnouncementsCalled = true
@@ -61,6 +72,10 @@ final class AnnouncementListInteractorTests: XCTestCase {
         
         func updateErrorAlert(_ error: Error) {
             updateErrorAlertCalled = true
+        }
+        
+        func deleteAnnouncement(_ title: String) {
+            deleteAnnouncementCalled = true
         }
     }
      
@@ -91,5 +106,19 @@ final class AnnouncementListInteractorTests: XCTestCase {
         // then
         XCTAssertTrue(workerSpy.fetchCalled)
         XCTAssertTrue(announcementListStateControllerSpy.updateErrorAlertCalled)
+    }
+    
+    func test_delete() async throws {
+        // given
+        let anncouncement = Announcement(id: UUID(), title: "Test", content: "Unit Test Of Delete")
+        
+        workerSpy.mockData = anncouncement
+        sut.worker = workerSpy
+        
+        // when
+        try await sut.deleteItem(anncouncement.id!)
+        
+        // then
+        XCTAssertTrue(workerSpy.deleteCalled)
     }
 }
